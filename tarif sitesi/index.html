@@ -1,125 +1,344 @@
 <!DOCTYPE html>
 <html lang="turkish">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">
-    <script src="https://kit.fontawesome.com/c6c1b3970a.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
-<nav>    
-    <div class="navbar">
-       <div class="logo">
-        <i class="fa-solid fa-utensils"></i>
-        Enfes Yemek
-        </div>     
-
+    <link rel="stylesheet" href="style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c6c1b3970a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-utensils"></i>
+          Enfes Yemek
+        </div>
 
         <div class="search">
-            <input type="text" class="searchTerm" placeholder="Bugün ne yemek istersin?">
-            <button type="submit" class="searchButton">
-              <i class="fa fa-search"></i>
-           </button>
-         </div>
-
+          <input
+            type="text"
+            class="searchTerm"
+            placeholder="Bugün ne yemek istersin?"
+          />
+          <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
 
         <div class="navbar-button">
-            <button id="tarif">Tarif Ekle</button>
-            <button id="login">Giriş Yap</button>             
-        </div>
-    </div>
-
-
-
-
-<div class="subnavbar">
-    <ul>
-        <li>Yemekler</li>
-        <li>Tatlılar</li>
-        <li>İçecekler</li>
-        <li>İletişim</li>
-    </ul>
-</div>
-</nav>
-
-<section>
-<div class="category">
-    
-    <div class="card" id="card1">
-        
-        <div class="cardtext">
-          <h2>Yemekler</h2>
-          <p>
-            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros.
-          </p>
-          <a href="#" class="read-more">
-            Read more 
-          </a>
+          <button id="tarif">Tarif Ekle</button>
+          <button id="login">Giriş Yap</button>
         </div>
       </div>
 
-      <div class="card" id="card2">
-        
-        <div class="cardtext">
-          <h2>Tatlılar</h2>
-          <p>
-            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros.
-          </p>
-          <a href="#" class="read-more">
-            Read more
-          </a>
-        </div>
+      <div class="subnavbar">
+        <ul>
+          <li>Yemekler</li>
+          <li>Tatlılar</li>
+          <li>İçecekler</li>
+          <li>İletişim</li>
+        </ul>
       </div>
-
-      <div class="card" id="card3">
-        
-        <div class="cardtext">
-          <h2>İçecekler</h2>
-          <p>
-            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros.
-          </p>
-          <a href="#" class="read-more">
-            Read more
-          </a>
-        </div>
-      </div>
-
-
-
-    
-</div>
-      <div class="bests">
-<h2>En Sevilen Yemekler</h2>
-
-        <div>
-            <ul>
-                <li>
-                    <figure>
-                        <img src="https://picsum.photos/id/1011/800/450" alt="">
-                    </figure>
-                    <h4>abc</h4>
-                </li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-            </ul>
+    </nav>
+<!-- İçerik ve Kategoriler -->
+    <section>
+      <div class="category">
+        <div class="card" id="card1">
+          <div class="cardtext">
+            <h2>Yemekler</h2>
+            <p>
+              Curabitur convallis ac quam vitae laoreet. Nulla mauris ante,
+              euismod sed lacus sit amet.
+            </p>
+            <a href="#" class="read-more">
+              Tariflere git <i class="fa-solid fa-arrow-right arrow"></i>
+            </a>
+          </div>
         </div>
 
+        <div class="card" id="card2">
+          <div class="cardtext">
+            <h2>Tatlılar</h2>
+            <p>
+              Curabitur convallis ac quam vitae laoreet. Nulla mauris ante,
+              euismod sed lacus sit amet.
+            </p>
+            <a href="#" class="read-more">
+              Tariflere git <i class="fa-solid fa-arrow-right arrow"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="card" id="card3">
+          <div class="cardtext">
+            <h2>Salatalar</h2>
+            <p>
+              Curabitur convallis ac quam vitae laoreet. Nulla mauris ante,
+              euismod sed lacus sit amet.
+            </p>
+            <a href="#" class="read-more">
+              Tariflere git <i class="fa-solid fa-arrow-right arrow"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="card" id="card4">
+          <div class="cardtext">
+            <h2>İçecekler</h2>
+            <p>
+              Curabitur convallis ac quam vitae laoreet. Nulla mauris ante,
+              euismod sed lacus sit amet.
+            </p>
+            <a href="#" class="read-more">
+              Tariflere git <i class="fa-solid fa-arrow-right arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- En Sevilen Tarifler -->
+      <div class="besties">
+        <h2><i class="fa-solid fa-utensils"></i> En Sevilen Tarifler</h2>
+
+        <div class="mini-list">
+          <div class="mini-card">
+            <div class="mini-image">
+              <img
+                src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="mini-text">
+              <h3>Başlık</h3>
+              <p>Açıklama falan</p>
+            </div>
+            <div class="mini-info">
+              <span><i class="fa-solid fa-circle-user"></i> Ezgi</span>
+              <span><i class="fa-solid fa-heart"></i> 1783</span>
+              <span><i class="fa-solid fa-comment"></i> 716</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-image">
+              <img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="mini-text">
+              <h3>Başlık</h3>
+              <p>Açıklama falan</p>
+            </div>
+            <div class="mini-info">
+              <span><i class="fa-solid fa-circle-user"></i> CandyCorn</span>
+              <span><i class="fa-solid fa-heart"></i> 643</span>
+              <span><i class="fa-solid fa-comment"></i> 71</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+          
+
+          <div class="mini-card">
+            <div class="mini-image">
+              <img
+                src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=2565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="mini-text">
+              <h3>Başlık</h3>
+              <p>Açıklama falan</p>
+            </div>
+            <div class="mini-info">
+              <span><i class="fa-solid fa-circle-user"></i> SweetPotato</span>
+              <span><i class="fa-solid fa-heart"></i> 323</span>
+              <span><i class="fa-solid fa-comment"></i> 76</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-image">
+              <img
+                src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=2565&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="mini-text">
+              <h3>Başlık</h3>
+              <p>Açıklama falan</p>
+            </div>
+            <div class="mini-info">
+              <span><i class="fa-solid fa-circle-user"></i> SweetPotato</span>
+              <span><i class="fa-solid fa-heart"></i> 323</span>
+              <span><i class="fa-solid fa-comment"></i> 76</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-image">
+              <img
+                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="mini-text">
+              <h3>Başlık</h3>
+              <p>Açıklama falan</p>
+            </div>
+            <div class="mini-info">
+              <span><i class="fa-solid fa-circle-user"></i> EceEngin</span>
+              <span><i class="fa-solid fa-heart"></i> 173</span>
+              <span><i class="fa-solid fa-comment"></i> 76</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- En Yeni Tarifler -->
+      <div class="news">
+        <h2><i class="fa-solid fa-utensils"></i> En Yeni Tarifler</h2>
+
+        <div class="mini-list">
+          <div class="mini-card">
+            <div class="mini-image">
+              <img
+                src="https://images.unsplash.com/photo-1546039907-7fa05f864c02?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="mini-text">
+              <h3>Başlık</h3>
+              <p>Açıklama falan</p>
+            </div>
+            <div class="mini-info">
+              <span><i class="fa-solid fa-circle-user"></i> AysunKaya</span>
+              <span><i class="fa-solid fa-heart"></i> 173</span>
+              <span><i class="fa-solid fa-comment"></i> 76</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-image">
+              <img
+                src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?q=80&w=2676&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="mini-text">
+              <h3>Başlık</h3>
+              <p>Açıklama falan</p>
+            </div>
+            <div class="mini-info">
+              <span><i class="fa-solid fa-circle-user"></i> TatlıElma</span>
+              <span><i class="fa-solid fa-heart"></i> 173</span>
+              <span><i class="fa-solid fa-comment"></i> 76</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-image">
+              <img
+                src="https://images.unsplash.com/photo-1619337744931-97f65a4f14d0?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="mini-text">
+              <h3>Başlık</h3>
+              <p>Açıklama falan</p>
+            </div>
+            <div class="mini-info">
+              <span><i class="fa-solid fa-circle-user"></i> Speedy</span>
+              <span><i class="fa-solid fa-heart"></i> 173</span>
+              <span><i class="fa-solid fa-comment"></i> 76</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-image">
+              <img
+                src="https://images.unsplash.com/photo-1619337744931-97f65a4f14d0?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="mini-text">
+              <h3>Başlık</h3>
+              <p>Açıklama falan</p>
+            </div>
+            <div class="mini-info">
+              <span><i class="fa-solid fa-circle-user"></i> Speedy</span>
+              <span><i class="fa-solid fa-heart"></i> 173</span>
+              <span><i class="fa-solid fa-comment"></i> 76</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+
+          <div class="mini-card">
+            <div class="mini-image">
+              <img
+                src="https://images.unsplash.com/photo-1588673523898-687eaf18c036?q=80&w=2590&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="mini-text">
+              <h3>Başlık</h3>
+              <p>Açıklama falan</p>
+            </div>
+            <div class="mini-info">
+              <span><i class="fa-solid fa-circle-user"></i> Sümeyye</span>
+              <span><i class="fa-solid fa-heart"></i> 173</span>
+              <span><i class="fa-solid fa-comment"></i> 76</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="signup">
+        <h2>Yaratıcı tariflerinizi paylaşabileceğinizi biliyor muydunuz?
+          Enfes Yemek’te kendi tarif arşivinizi oluşturabilir, uzman şeflerin onayını alarak ana sayfada yerinizi alabilirsiniz!</h2>
+          <button>Üye Ol</button>
+      </div>
+      <div class="footer">
+      <div> <h2>Enfes Yemek</h2></div>
+      <div>
+        <ul><h3>Enfes Yemek</h3>
+          <li>Biz Kimiz</li>
+          <li>Bize Ulaşın</li>
+          <li>Gizlilik Sözleşmesi</li>
+          <li>Kullanım Koşulları</li>
+        </ul>
+      </div>
+      <div>
+        <ul><h3>Kategoriler</h3>
+          <li>Yemekler</li>
+          <li>Tatlılar</li>
+          <li>Salatalar</li>
+          <li>İçecekler</li>
+        </ul>
+      </div>
+      <div>
+        <ul><h3>Sosyal</h3>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+          <li>Facebook</li>
+        </ul>
       </div>
 
-
-</section>
-
-<footer>
-
-</footer>
-
-
-
-
-    
-</body>
+      </div>
+      <div class="copyright"> Copyright 2024 Enfes Yemek. made by Sinan Engin</div>
+    </footer>
+  </body>
 </html>

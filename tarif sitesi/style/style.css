@@ -96,14 +96,15 @@ body {
     max-width: 1200px;
     margin-inline: auto;
     padding-inline: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 24px;
+    margin-bottom: 20px;
 }
 
 .card {
-    height: 500px;
+    height: 450px;
     margin-top: 20px;
-    border: 1px solid gray;
+    border: none;
     border-radius: 16px;
     background-size: cover;
     display: flex;
@@ -119,6 +120,9 @@ body {
 }
 
 #card3 {
+    background-image: url("../images/salata.jpg");
+}
+#card4 {
     background-image: url("../images/icecek.jpg");
 }
 .cardtext {
@@ -134,25 +138,112 @@ body {
     color: aquamarine;
     text-decoration: none;
 }
+.arrow {
+    float: right;
+}
 
-.bests {
+.news {
+    color: crimson;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.besties {
     background-color: crimson;
     color: whitesmoke;
-    margin-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.besties h2, .news h2 {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+.mini-list {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+
+}
+
+.mini-card {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: black;
+    height: 350px;
+
+}
+.mini-image {
+    overflow: hidden;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+}
+.mini-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.mini-text {
+    height: 30%;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 10px;
+}
+.mini-text h3 {
+    margin-top: 5px;
+}
+.mini-info {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 0 5px 0 5px;
+    border-top: 1px solid #d5d5d5;
+    color: #555555;
+    font-size: small;
+}
+.footer {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 100px 0 100px;
+    
+}
+.footer li {
+    list-style: none;
+}
+.signup {
+    background-color: crimson;
+    padding: 30px;
+    color: whitesmoke;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-.bests ul {
-    display: grid;
+.signup h2 {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
 }
-.bests li {
-    background-color: darkorange;
-    border-radius: 5px;
-    list-style: none;
-    margin-right: 15px;
+.signup button {
+    width: 120px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: crimson;
+    font-weight: bolder;
 }
-.bests li img {
-    height: 100px;
-    width: 150px;
-
+.copyright {
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    background-color: #e5e5e5;
 }
