@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:10px 30px 10px 0;
+    font-size: large;
+    font-weight: bolder;
+}
+.logo i {
+    margin-right: 5px;
+}
+
+.subnavbar {
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: crimson;
+    justify-content: center;
+    align-items: center;
+}
+.subnavbar ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.subnavbar li {
+    margin-right: 20px;
+    color: white;
+    display: inline-block;
+    list-style: none;
+}
+.search {
+    display: flex;
+    margin:10px 30px 10px 0;
+    width: 30%;
+  }
+  
+.searchTerm {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    color: #9DBFAF;
+  }
+  
+.searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+.searchButton {
+    width: 40px;
+    height: 32px;
+    border: none;
+    background: #c7c7c7;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+.navbar-button button{
+    font-family: "Quicksand", sans-serif;
+    height: 32px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    margin:10px 5px 10px 0;
+}
+#tarif {
+    background-color: crimson;
+}
+#login {
+    background-color: darkorange;
+}
+
+.category {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    height: 500px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    border-radius: 16px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+#card1 {
+    background-image: url("../images/yemek.jpg");
+}
+
+#card2 {
+    background-image: url("../images/tatli.jpg");
+}
+
+#card3 {
+    background-image: url("../images/icecek.jpg");
+}
+.cardtext {
+    padding: 5px 20px 20px 20px;
+    border-radius: 0 0 16px 16px;
+    color: seashell;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    height: 35%;
+}
+
+.cardtext a {
+    color: aquamarine;
+    text-decoration: none;
+}
+
+.bests {
+    background-color: crimson;
+    color: whitesmoke;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.bests ul {
+    display: grid;
+}
+.bests li {
+    background-color: darkorange;
+    border-radius: 5px;
+    list-style: none;
+    margin-right: 15px;
+}
+.bests li img {
+    height: 100px;
+    width: 150px;
+
+}
