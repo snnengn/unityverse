@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="turkish">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/c6c1b3970a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-utensils"></i>
+          <a href="index.html">Enfes Yemek</a>
+        </div>
+
+        <div class="search">
+          <input
+            type="text"
+            class="searchTerm"
+            placeholder="Bugün ne yemek istersin?"
+          />
+          <button type="submit" class="searchButton">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <div class="navbar-button">
+          <a href="#"><button id="tarif">Tarif Ekle</button></a>
+          <a href="#"><button id="login">Giriş Yap</button></a>
+        </div>
+      </div>
+
+      <div class="subnavbar">
+        <ul>
+          <li><a href="/yemekler.html">Yemekler</a></li>
+          <li><a href="/yemekler.html">Tatlılar</a></li>
+          <li><a href="/yemekler.html">Salatalar</a></li>
+          <li><a href="/yemekler.html">İçecekler</a></li>
+        </ul>
+      </div>
+    </nav>
+<!-- Menu -->
+<div class="menu">
+    <h2><i class="fa-solid fa-hashtag"></i> Menü</h2>
+<div class="tags">
+    <ul>
+        <li><a href="#">Akşam Yemeği Menüleri</a></li>
+        <li><a href="">Kahvaltı Menüleri</a></li>
+        <li><a href="">İkramlık</a></li>
+        <li><a href="">Ramazan Menüleri</a></li>
+        <li><a href="">Diyet Menüleri</a></li>
+        <li><a href="">Vejeteryan Menüler</a></li>
+        <li><a href="">Çorbalar</a></li>
+        <li><a href="">Etli Yemekler</a></li>
+        <li><a href="">Tavuklu Yemekler</a></li>
+        <li><a href="">Sebze Yemekleri</a></li>
+        <li><a href="">Hamur İşleri</a></li>
+        <li><a href="">Vegan Menüler</a></li>
+        <li><a href="">Pratik Menüler</a></li>
+    </ul>
+</div>
+
+</div>
+
+  
+      
+<!-- En Yeni Tarifler -->
+      <div class="news">
+        <div class="category-2">
+        <div><h2><i class="fa-solid fa-utensils"></i> En Lezzetli Yemekler</h2></div>
+        <div>Sırala:
+<select id="sort" name="sort">
+  <option value="">En Yeni</option>
+  <option value="">En Çok Yorum</option>  
+  <option value="">En Çok Beğeni</option>
+  <option value="">En Popüler</option>
+</select>
+</div>
+        
+
+        </div>
+
+        
+
+        <div class="category-list">
+            <a href="tarif-detay.html">
+          <div class="category-card">
+            <div class="category-image">
+              <img
+                src="https://gaziantepetyemekleri.com/wp-content/uploads/2020/05/5cfe4af3c03c0e2740904345.jpg"
+                alt=""
+              />
+            </div>
+            <div class="category-text">
+              <h3>Şişte Patlıcan Kebabı</h3>
+              <p>
+                <span><i class="fa-solid fa-clock"></i> 30-45 dk</span>
+                <span><i class="fa-solid fa-utensils"></i> 4-6 Kişilik</span>
+              </p>
+            </div>
+            <div class="category-info">
+              <span><i class="fa-solid fa-circle-user"></i> Speedy</span>
+              <span><i class="fa-solid fa-heart"></i> 173</span>
+              <span><i class="fa-solid fa-comment"></i> 76</span>
+              <span><i class="fa-solid fa-share-nodes"></i> 10</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="category-card">
+            <div class="category-image">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1673769107502-06684e96c2e2?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="category-text">
+              <h3>Başlık</h3>
+              <p>
+                <span><i class="fa-solid fa-clock"></i> 60 dk</span>
+                <span><i class="fa-solid fa-utensils"></i> 6 Kişilik</span>
+              </p>
+            </div>
+            <div class="category-info">
+              <span><i class="fa-solid fa-circle-user"></i> TatlıElma</span>
+              <span><i class="fa-solid fa-heart"></i> 173</span>
+              <span><i class="fa-solid fa-comment"></i> 76</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="category-card">
+            <div class="category-image">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1707581577455-b346e01ec60f?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="category-text">
+              <h3>Başlık</h3>
+              <p>
+                <span><i class="fa-solid fa-clock"></i> 30-45 dk</span>
+                <span><i class="fa-solid fa-utensils"></i> 4 Kişilik</span>
+              </p>
+            </div>
+            <div class="category-info">
+              <span><i class="fa-solid fa-circle-user"></i> Speedy</span>
+              <span><i class="fa-solid fa-heart"></i> 173</span>
+              <span><i class="fa-solid fa-comment"></i> 76</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="category-card">
+            <div class="category-image">
+              <img
+                src="https://images.unsplash.com/photo-1671292747894-f9c6e7cb0afc?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="category-text">
+              <h3>Başlık</h3>
+              <p>
+                <span><i class="fa-solid fa-clock"></i> 60-90 dk</span>
+                <span><i class="fa-solid fa-utensils"></i> 4-6 Kişilik</span>
+              </p>
+            </div>
+            <div class="category-info">
+              <span><i class="fa-solid fa-circle-user"></i> Handan</span>
+              <span><i class="fa-solid fa-heart"></i> 13</span>
+              <span><i class="fa-solid fa-comment"></i> 6</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="category-card">
+            <div class="category-image">
+              <img
+                src="https://images.unsplash.com/photo-1576748259154-4f90ff00342f?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="category-text">
+              <h3>Başlık</h3>
+              <p>
+                <span><i class="fa-solid fa-clock"></i> 30-45 dk</span>
+                <span><i class="fa-solid fa-utensils"></i> 4 Kişilik</span>
+              </p>
+            </div>
+            <div class="category-info">
+              <span><i class="fa-solid fa-circle-user"></i> Handan</span>
+              <span><i class="fa-solid fa-heart"></i> 13</span>
+              <span><i class="fa-solid fa-comment"></i> 6</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="category-card">
+            <div class="category-image">
+              <img
+                src="https://images.unsplash.com/photo-1593584785033-9c7604d0863f?q=80&w=1315&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="category-text">
+              <h3>Başlık</h3>
+              <p>
+                <span><i class="fa-solid fa-clock"></i> 30-45 dk</span>
+                <span><i class="fa-solid fa-utensils"></i> 4 Kişilik</span>
+              </p>
+            </div>
+            <div class="category-info">
+              <span><i class="fa-solid fa-circle-user"></i> Handan</span>
+              <span><i class="fa-solid fa-heart"></i> 13</span>
+              <span><i class="fa-solid fa-comment"></i> 6</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="category-card">
+            <div class="category-image">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1677192449790-2497674b098d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="category-text">
+              <h3>Başlık</h3>
+              <p>
+                <span><i class="fa-solid fa-clock"></i> 60-90 dk</span>
+                <span><i class="fa-solid fa-utensils"></i> 4-6 Kişilik</span>
+              </p>
+            </div>
+            <div class="category-info">
+              <span><i class="fa-solid fa-circle-user"></i> Handan</span>
+              <span><i class="fa-solid fa-heart"></i> 13</span>
+              <span><i class="fa-solid fa-comment"></i> 6</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#">
+          <div class="category-card">
+            <div class="category-image">
+              <img
+                src="https://images.unsplash.com/photo-1696935198489-5e4f3b5c7667?q=80&w=1457&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="category-text">
+              <h3>Başlık</h3>
+              <p>
+                <span><i class="fa-solid fa-clock"></i> 30-45 dk</span>
+                <span><i class="fa-solid fa-utensils"></i> 4 Kişilik</span>
+              </p>
+            </div>
+            <div class="category-info">
+              <span><i class="fa-solid fa-circle-user"></i> Handan</span>
+              <span><i class="fa-solid fa-heart"></i> 13</span>
+              <span><i class="fa-solid fa-comment"></i> 6</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+        </a>
+
+<a href="#">
+          <div class="category-card">
+            <div class="category-image">
+              <img
+                src="https://images.unsplash.com/photo-1627662168781-4345690f0bb3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="category-text">
+              <h3>Başlık</h3>
+              <p>
+                <span><i class="fa-solid fa-clock"></i> 30-45 dk</span>
+                <span><i class="fa-solid fa-utensils"></i> 4 Kişilik</span>
+              </p>
+            </div>
+            <div class="category-info">
+              <span><i class="fa-solid fa-circle-user"></i> Handan</span>
+              <span><i class="fa-solid fa-heart"></i> 13</span>
+              <span><i class="fa-solid fa-comment"></i> 6</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+</a>
+
+        <a href="#">
+          <div class="category-card">
+            <div class="category-image">
+              <img
+                src="https://images.unsplash.com/photo-1574484284002-952d92456975?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+              />
+            </div>
+            <div class="category-text">
+              <h3>Başlık</h3>
+              <p>
+                <span><i class="fa-solid fa-clock"></i> 30-45 dk</span>
+                <span><i class="fa-solid fa-utensils"></i> 4 Kişilik</span>
+              </p>
+            </div>
+            <div class="category-info">
+              <span><i class="fa-solid fa-circle-user"></i> Sümeyye</span>
+              <span><i class="fa-solid fa-heart"></i> 173</span>
+              <span><i class="fa-solid fa-comment"></i> 76</span>
+              <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+          </div>
+        </a>
+
+        </div>
+      </div>
+    </section>
+
+<!-- Footer -->
+    <footer class="footer">
+      <div class="signup">
+        <h2>Yaratıcı tariflerinizi paylaşabileceğinizi biliyor muydunuz?
+          Enfes Yemek’te kendi tarif arşivinizi oluşturabilir, uzman şeflerin onayını alarak ana sayfada yerinizi alabilirsiniz!</h2>
+          <button>Üye Ol</button>
+      </div>
+      <div class="footer-link">
+      <div>
+         <h2>Enfes Yemek</h2>
+         <span class="social">
+          <i class="fa-brands fa-square-youtube"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-x-twitter"></i>
+
+        </span>
+      </div>
+      <div>
+        <ul><h3>Enfes Yemek</h3>
+          <li>Biz Kimiz</li>
+          <li>Bize Ulaşın</li>
+          <li>Gizlilik Sözleşmesi</li>
+          <li>Kullanım Koşulları</li>
+        </ul>
+      </div>
+      <div>
+        <ul><h3>Kategoriler</h3>
+          <li>Yemekler</li>
+          <li>Tatlılar</li>
+          <li>Salatalar</li>
+          <li>İçecekler</li>
+        </ul>
+      </div>
+      <div>
+        <ul><h3>Sosyal</h3>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>Youtube</li>
+          <li>Facebook</li>
+        </ul>
+      </div>
+
+      </div>
+      <div class="copyright"> Copyright 2024 Enfes Yemek. made by Sinan Engin</div>
+    </footer>
+  </body>
+</html>

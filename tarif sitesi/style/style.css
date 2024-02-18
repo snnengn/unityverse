@@ -4,6 +4,14 @@ body {
     font-family: "Quicksand", sans-serif;
     margin: 0;
 }
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/*navbar*/
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -19,10 +27,13 @@ body {
     justify-content: center;
     margin:10px 30px 10px 0;
     font-size: large;
-    font-weight: bolder;
 }
 .logo i {
     margin-right: 5px;
+}
+.logo a {
+    font-weight: 800;
+    color: #111111;
 }
 
 .subnavbar {
@@ -40,10 +51,19 @@ body {
 }
 
 .subnavbar li {
-    margin-right: 20px;
     color: white;
     display: inline-block;
     list-style: none;
+}
+.subnavbar a{
+    padding: 10px;
+    color: whitesmoke;
+    font-weight: 700;
+}
+.subnavbar a:hover {
+    padding: 10px;
+    background-color: rgb(190, 19, 53);
+    transition: all 0.3s ease;
 }
 .search {
     display: flex;
@@ -73,22 +93,17 @@ body {
     color: #fff;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1,8em;
   }
 
 .navbar-button button{
     font-family: "Quicksand", sans-serif;
+    font-weight: 500;
     height: 32px;
     border-radius: 6px;
     border: none;
     color: white;
     margin:10px 5px 10px 0;
-}
-#tarif {
-    background-color: crimson;
-}
-#login {
-    background-color: darkorange;
 }
 
 .category {
@@ -110,6 +125,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
+}
+.card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
 }
 #card1 {
     background-image: url("../images/yemek.jpg");
@@ -136,10 +155,14 @@ body {
 
 .cardtext a {
     color: aquamarine;
-    text-decoration: none;
 }
+
 .arrow {
     float: right;
+}
+.arrow:hover {
+    transform: scale(1.5);
+    transition: all 0.3s ease;
 }
 
 .news {
@@ -170,12 +193,15 @@ body {
 }
 
 .mini-card {
-    border: 1px solid white;
     border-radius: 10px;
     background-color: whitesmoke;
     color: black;
     height: 350px;
+}
 
+.mini-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
 }
 .mini-image {
     overflow: hidden;
@@ -202,20 +228,343 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 10px;
-    padding: 0 5px 0 5px;
     border-top: 1px solid #d5d5d5;
     color: #555555;
     font-size: small;
 }
-.footer {
+
+/*categories*/
+
+.menu {
+    margin-top: 20px;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+.menu h2 {
+    color: crimson;
+}
+.tags {
+    border-radius: 10px;
+    padding:20px 0;
+    background-color: whitesmoke;
+}
+.tags ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tags li {
+    list-style: none;
+}
+.tags a {
+    display: inline-block;
+    background-color: #838383;
+    color: whitesmoke;
+    padding: 0 12px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9em;
+    height: 32px;
+    line-height: 32px;
+}
+.tags a:hover {
+    background-color: #9e9d9d;
+}
+
+.category-2 {
+    color: crimson;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+.category-2 h2 {
+    padding: 0 !important;
+
+}
+.category-2 select, .category-2 option {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.category-list {
+    display: grid;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+
+}
+
+.category-card {
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: black;
+    height: 350px;
+}
+
+.category-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+.category-image {
+    overflow: hidden;
+    height: 65%;
+    border-radius: 10px 10px 0 0;
+}
+.category-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.category-text {
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 10px;
+}
+.category-text p {
+    font-size: small;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #555555;
+}
+.category-text h3 {
+    margin: 0;
+}
+.category-info {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border-top: 1px solid #d5d5d5;
+    color: #555555;
+    font-size: small;
+}
+
+/*categories*/
+
+.details-breadcrumb {
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.details-breadcrumb ul {
+    display: flex;
+    flex-direction: row;
+}
+.details-breadcrumb li {
+    padding: 5px;
+    list-style: none;
+}
+.details-main {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    margin-top: 20px;
+}
+.details-main h1 {
+    text-align: center;
+}
+.details-card {
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+}
+.details-image {
     background-color: whitesmoke;
     display: flex;
-    justify-content: space-around;
-    padding: 30px 100px 0 100px;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.details-image img {
+    width: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.details-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: auto;
+    padding: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.details-text span {
+    padding: 5px;
+}
+.details-info {
+    background-color: rgb(235, 235, 235);
+    border-radius: 0 0 10px 10px;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+}
+.details-info p {
+    display: flex;
+    flex-wrap: wrap;
+}
+.details-info span {
+    margin-top: 5px;
+    margin-right: 20px ;
+}
+.details-info img {
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    border: 2px solid #ffffff;
+}
+.details-info ul {
+    padding: 0;
+    display: flex;
+}
+.details-info li {
+    background-color: #c7c7c7;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.details-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.details-user button {
+    height: 32px;
+    padding: 0 10px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    margin:5px 5px;
+}
+.details-social {
+    margin-left: 20px;
+}
+.details-user-info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+.details-user-info h4 {
+    padding: 0 5px;
+    margin: 0 5px;
+    color: crimson;
+}
+.details-user-info h6 {
+    padding: 0 5px;
+    margin: 0 5px;
+}
+.details-recipe, .details-ingredients, .details-comments {
+    background-color: whitesmoke;
+    border-radius:10px;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+}
+.details-recipe li {
+    list-style:circle;
+    list-style-position: outside;
+    padding: 5px 0;
+
+}
+.details-ingredients ul, .details-ingredients ul {
+    padding: 0;
+    display: flex;
+}
+.details-ingredients li {
+    background-color: crimson;
+    color: whitesmoke;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.details-tags {
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+}
+.details-tags ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 10px;
+}
+.details-tags li {
+    list-style: none;
+}
+.details-tags a {
+    display: inline-block;
+    background-color: #838383;
+    color: whitesmoke;
+    padding: 0 12px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9em;
+    height: 32px;
+    line-height: 32px;
+}
+.details-tags a:hover {
+    background-color: #9e9d9d;
+}
+.details-tags h2, .details-recipe h2, .details-ingredients h2, .details-comments h2 {
+    padding: 10px 0;
+    margin: 0 10px;
+}
+.details-comment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 30px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 100px;
+}
+.details-comment-image {
+    object-fit: cover;
+}
+.details-comment-image img {
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+}
+.details-comment-text {
+    width: 70%;
+    background-color: #e5e5e5;
+    padding: 20px;
+    border-radius: 100px;
+}
+/*footer*/
+
+.footer {
+    background-color: whitesmoke;
     
 }
-.footer li {
+.footer-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+}
+
+.footer-link li {
     list-style: none;
+    padding: 5px 0;
 }
 .signup {
     background-color: crimson;
@@ -246,4 +595,78 @@ body {
     padding: 20px;
     text-align: center;
     background-color: #e5e5e5;
+}
+.social {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7em;
+    padding: 5px;
+}
+
+/*buttons*/
+#tarif {
+    background-color: crimson;
+    cursor:pointer;
+}
+#tarif:hover {
+    background-color: rgb(175, 17, 49);
+    cursor:pointer;
+}
+
+#login {
+    background-color: darkorange;
+    cursor:pointer;
+}
+#login:hover {
+    background-color: rgb(228, 126, 2);
+    cursor:pointer;
+}
+#facebook {
+    background-color: rgb(1, 135, 224);
+    cursor:pointer;
+    font-size: 1em;
+}
+#facebook:hover {
+    background-color: rgb(0, 121, 202);
+    cursor:pointer;
+}
+
+#instagram {
+    background-color: rgb(255, 255, 255);
+    color: crimson;
+    cursor:pointer;
+    font-size: 1em;
+}
+#instagram:hover {
+    background-color: rgb(228, 228, 228);
+    cursor:pointer;
+}
+#whatsapp {
+    background-color: rgb(58, 204, 0);
+    cursor:pointer;
+    font-size: 1em;
+}
+#whatsapp:hover {
+    background-color: rgb(51, 177, 1);
+    cursor:pointer;
+}
+
+#twitter {
+    background-color: rgb(0, 145, 241);
+    cursor:pointer;
+    font-size: 1em;
+}
+#twitter:hover {
+    background-color: rgb(2, 131, 218);
+    cursor:pointer;
+}
+#pinterest {
+    background-color: crimson;
+    cursor:pointer;
+    font-size: 1em;
+}
+#pinterest:hover {
+    background-color: rgb(175, 17, 49);
+    cursor:pointer;
+
 }
