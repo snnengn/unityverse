@@ -355,6 +355,10 @@ li {
     background-color: whitesmoke;
     border-radius: 10px;
 }
+.details-breadcrumb a{
+    color: rgb(0, 0, 0);
+
+}
 .details-breadcrumb ul {
     display: flex;
     flex-direction: row;
@@ -547,6 +551,147 @@ li {
     padding: 20px;
     border-radius: 100px;
 }
+.details-comment-login {
+    padding: 5px;
+    text-align: center;
+}
+.details-comment-login a {
+font-weight: 700;
+color: crimson;
+}
+/*recipe-add*/
+.recipe-add {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.recipe-add input{
+    height: 30px;
+    width: 40%;
+    border:1px solid grey;
+    border-radius: 6px;
+    padding: 5px;
+}
+.recipe-add button{
+    height: 34px;
+    width: 34px;
+    border:0px;
+    border-radius: 6px;
+    background-color: crimson;
+    color: whitesmoke;
+    margin-left: 5px;
+}
+.recipe-add button:hover{
+    background-color: rgb(175, 17, 49);
+    cursor:pointer;
+}
+.recipe-add textarea{
+    border:1px solid grey;
+    border-radius: 6px;
+    width: 90%;
+    padding: 5px;
+}
+.recipe-form{
+    margin: 20px 0px;
+}
+.recipe-add-main {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+.recipe-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 200px;
+}
+.image-add {
+    border: 2px dashed rgb(143, 143, 143);
+    color: rgb(143, 143, 143);
+    background-color: rgb(223, 223, 223);
+    padding: 20px;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 100;
+}
+.image-add:hover{
+    background-color: rgb(236, 236, 236);
+    cursor:pointer;
+}
+
+/*login*/
+
+.login {
+    max-width: 1200px;
+    min-height: 60vh ;
+    margin-inline: auto;
+    padding-inline: 24px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.login input{
+    height: 30px;
+    width: 100%;
+    border:1px solid grey;
+    border-radius: 6px;
+    padding: 5px;
+}
+.login button{
+    border:0px;
+    border-radius: 6px;
+    background-color: crimson;
+    color: whitesmoke;
+    margin:20px 0px;
+    padding: 10px;
+}
+.login button:hover {
+    background-color: rgb(175, 17, 49);
+    cursor:pointer;
+}
+.login-form {
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 45%;
+}
+.login-form-b {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center:
+}
+.login-form-b a {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    color: black;
+    font-weight: 700;
+}
+.signup-form {
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 45%;
+}
+.signup-form p{
+    text-wrap: wrap;
+    margin: 0;
+    width: 100%;
+}
+
+
 /*footer*/
 
 .footer {
