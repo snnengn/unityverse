@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+html {
+    scroll-behavior:smooth;
+  }
+body {
+    margin: auto;
+    font-family: "Rubik", sans-serif;
+    height: 98vh;
+    background-color: whitesmoke;
+    caret-color: transparent;
+}
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+    opacity: 0.99;
+}
+.navbar {
+    width: 100%;
+    margin-inline: auto;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgb(187, 187, 187);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    max-width: 1600px;
+    padding: 0;
+    margin: 15px auto;
+
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar a {
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 8px;
+    margin: 0 3px;
+    transition: linear 0.2s;
+}
+.navbar a:hover {
+    color: white;
+    background-color: #000;
+    border-radius: 6px;
+
+}
+.main {
+    max-width: 1600px;
+    margin-inline: auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    margin: 10px auto;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgb(187, 187, 187);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.content ul {
+    width: 90%;
+    margin: 0;
+    padding: 0px;
+}
+.content li {
+    list-style: none;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-bottom:1px solid rgb(226, 226, 226);
+    font-weight: 200;
+    text-align: center;
+}
+.content h1 {
+    font-weight: 500;
+    margin: 15px;
+}
+.content a {
+    color: #000;
+    font-size: 1.3em;
+    padding: 2px;
+}
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: 35%;
+}
+.profile-pic {
+    border-radius: 500px;
+    border: 5px solid silver;
+    width: 400px;
+    height: auto;
+    margin: 20px 0;
+    filter: grayscale(100%);
+    transition: ease 2s;
+}
+.profile-pic:hover{
+    filter: grayscale(0%);
+    border: 5px solid #1a1a1a;
+    
+}
+.title {
+    font-size: 2em;
+    margin: 0 10px;
+    padding: 20px;
+    width: 100%;
+    flex: 60%;
+    z-index: 12;
+}
+.title p{
+    text-wrap: wrap;
+    padding: 0;
+    font-size: large;
+    font-weight: 100;
+    margin: 20px 0;
+}
+.title h1 {
+    margin: 0;
+    text-align: start;
+}
+.title h2 {
+    font-weight: 300;
+    padding: 2px;
+    margin: 20px 0;
+}
+.title h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+}
+.title-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 0;
+}
+
+/*contact*/
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    border: 1px solid rgb(202, 202, 202);
+    font-family: "Rubik", sans-serif;
+}
+.contact-form button {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #000;
+    color: white;
+    border: 1px solid rgb(202, 202, 202);
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+}
+.name input {
+    width: 49%;
+}
+.social {
+    padding: 10px;
+
+}
+.social a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 100;
+    margin: 2px;    
+}
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+}
+/*portfolio*/
+.portfolio {
+    max-width: 1600px;
+    margin-inline: auto;
+    height: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.portfolio-content {
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgb(187, 187, 187);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.portfolio-content h2 {
+    text-align: center;
+    font-weight: 300;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.portfolio-list {
+    display: grid;
+    max-width: 1600px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.portfolio-card {
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 10px;
+    background-color: whitesmoke;
+    color: black;
+    height: 450px;
+}
+
+.portfolio-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+.portfolio-image {
+    overflow: hidden;
+    height: 65%;
+    border-radius: 10px 10px 0 0;
+}
+
+.portfolio-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: ease 0.5s;
+}
+.portfolio-image img:hover {
+    filter: grayscale(0%);
+}
+.portfolio-text {
+    height: 20%;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 10px;
+}
+.portfolio-text h3 {
+    margin-top: 5px;
+}
+.portfolio-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio button {
+    width: 90%;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/*buttons*/
+#github {
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 0.4em;
+}
+#linkedin {
+    padding: 15px;
+    background-color: #0072b1;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 0.4em;
+}
