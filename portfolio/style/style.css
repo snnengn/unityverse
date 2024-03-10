@@ -5,7 +5,6 @@ html {
 body {
     margin: auto;
     font-family: "Rubik", sans-serif;
-    height: 98vh;
     background-color: whitesmoke;
     caret-color: transparent;
 }
@@ -21,16 +20,18 @@ body {
     opacity: 0.99;
 }
 .navbar {
-    width: 100%;
+    width: 80%;
+    margin: 10px auto;
     margin-inline: auto;
-    background-color: white;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 100;
     background-color: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(15px);
     border-bottom: 1px solid rgb(187, 187, 187);
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    border: 1px solid rgb(187, 187, 187);
 
 }
 .navbar ul{
@@ -38,21 +39,24 @@ body {
     flex-direction: row;
     justify-content: end;
     align-items: center;
-    max-width: 1600px;
+    max-width: 99%;
     padding: 0;
-    margin: 15px auto;
-
+    margin: 10px auto;
 }
+
 .navbar li{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .navbar a {
     color: rgb(0, 0, 0);
     font-size: medium;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
     padding: 8px;
-    margin: 0 3px;
+    margin-left: 5px;
     transition: linear 0.2s;
 }
 .navbar a:hover {
@@ -61,16 +65,34 @@ body {
     border-radius: 6px;
 
 }
+@media (max-width: 800px) {
+    .navbar {
+    width: 98%;
+    }
+    .navbar ul {
+    max-width: 98%;
+    text-wrap: nowrap;
+    }
+    .navbar a{
+    margin: 0 auto;
+    font-size: 0.9em;
+    }
+  }
 .main {
-    max-width: 1600px;
+    max-width: 80%;
     margin-inline: auto;
-    height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
-    margin: 10px auto;
+    margin: 15px auto;
+    padding-top: 10%;
 }
+@media (max-width: 800px) {
+    .main {
+      max-width: 98%;
+    }
+  }
 .content {
     display: flex;
     flex-direction: row;
@@ -78,18 +100,19 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 80%;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.90);
     backdrop-filter: blur(15px);
     border: 1px solid rgb(187, 187, 187);
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 100px 0;
 }
 .content ul {
     width: 90%;
     margin: 0;
     padding: 0px;
 }
+
 .content li {
     list-style: none;
     margin: 5px 0;
@@ -112,17 +135,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 95%;
     flex: 35%;
 }
 .profile-pic {
     border-radius: 500px;
     border: 5px solid silver;
-    width: 400px;
+    width: 390px;
     height: auto;
     margin: 20px 0;
     filter: grayscale(100%);
-    transition: ease 2s;
+    transition: ease 1s;
 }
 .profile-pic:hover{
     filter: grayscale(0%);
@@ -134,7 +157,7 @@ body {
     margin: 0 10px;
     padding: 20px;
     width: 100%;
-    flex: 60%;
+    flex: 52%;
     z-index: 12;
 }
 .title p{
@@ -164,6 +187,10 @@ body {
     justify-content: start;
     align-items: center;
     padding: 0;
+}
+.blank {
+    height: 25%;
+    margin: 50px 0;
 }
 
 /*contact*/
@@ -222,7 +249,6 @@ body {
 }
 
 .portfolio-content {
-    height: 80%;
     width: 100%;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.90);
@@ -240,13 +266,18 @@ body {
 }
 
 .portfolio-list {
-    display: grid;
-    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-inline: auto;
     padding-inline: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 24px;
 }
+@media (max-width: 800px) {
+    .portfolio-list {
+      flex-direction: column;
+    }
+  }
 
 .portfolio-card {
     border: 1px solid rgb(187, 187, 187);
@@ -254,7 +285,15 @@ body {
     background-color: whitesmoke;
     color: black;
     height: 450px;
+    margin: 10px;
+    flex: 31%;
+    flex-grow: 0;
 }
+@media (max-width: 800px) {
+    .portfolio-card {
+      flex: 100%;
+    }
+  }
 
 .portfolio-card:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -262,7 +301,7 @@ body {
 }
 .portfolio-image {
     overflow: hidden;
-    height: 65%;
+    height: 60%;
     border-radius: 10px 10px 0 0;
 }
 
@@ -275,9 +314,10 @@ body {
 }
 .portfolio-image img:hover {
     filter: grayscale(0%);
+    transform: scale(1.1);
 }
 .portfolio-text {
-    height: 20%;
+    height: 25%;
     background-color: whitesmoke;
     margin: 0;
     padding: 10px;
@@ -291,8 +331,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-.portfolio button {
-    width: 90%;
+.portfolio-content button {
+    width: 95%;
     padding: 10px;
     background-color: #000;
     color: white;
