@@ -65,6 +65,12 @@ body {
     border-radius: 6px;
 
 }
+.navbar a:active {
+    color: white;
+    background-color: #5c5c5c;
+    border-radius: 6px;
+
+}
 @media (max-width: 800px) {
     .navbar {
     width: 98%;
@@ -86,7 +92,7 @@ body {
     flex-direction: row;
     align-content: center;
     margin: 15px auto;
-    padding-top: 10%;
+    padding-top: 6%;
 }
 @media (max-width: 800px) {
     .main {
@@ -106,6 +112,49 @@ body {
     border: 1px solid rgb(187, 187, 187);
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     padding: 100px 0;
+}
+.home-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgb(187, 187, 187);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 100px 0;
+}
+@media (max-width: 800px) {
+    .home-content {
+      height:100%;
+    }
+  }
+.home-content ul {
+    width: 90%;
+    margin: 0;
+    padding: 0px;
+}
+
+.home-content li {
+    list-style: none;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-bottom:1px solid rgb(226, 226, 226);
+    font-weight: 200;
+    text-align: center;
+}
+.home-content h1 {
+    font-weight: 500;
+    margin: 15px;
+}
+.home-content a {
+    color: #000;
+    font-size: 1.3em;
+    padding: 2px;
 }
 .content ul {
     width: 90%;
@@ -130,6 +179,7 @@ body {
     font-size: 1.3em;
     padding: 2px;
 }
+
 .image {
     display: flex;
     flex-direction: column;
@@ -141,7 +191,7 @@ body {
 .profile-pic {
     border-radius: 500px;
     border: 5px solid silver;
-    width: 390px;
+    width: 360px;
     height: auto;
     margin: 20px 0;
     filter: grayscale(100%);
@@ -177,7 +227,7 @@ body {
     margin: 20px 0;
 }
 .title h4 {
-    margin: 0;
+    margin: 20px 0;
     padding: 0;
     font-weight: 200;
 }
@@ -237,6 +287,149 @@ body {
     justify-content: center;
     margin: 5px;
 }
+/*experiences*/
+.experiences-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgb(187, 187, 187);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 10px 0;
+}
+.experiences-content h2 {
+    text-align: center;
+    font-weight: 300;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 2em;
+}
+.experiences-content h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+}
+.experiences {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 98%;
+    margin: 30px 0;
+}
+.exp-card {
+    background-color: whitesmoke;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+.exp-card h3 {
+    font-weight: 400;
+    padding: 2px;
+    margin: 0;
+
+}
+.exp-card h4, h5 {
+    font-weight: 100;
+    padding: 2px;
+    margin: 0;
+    text-wrap: wrap;
+}
+.edu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.left, .right {
+    flex: 40% ;
+}
+@media (max-width: 800px) {
+    .left, .right {
+      max-width: 98%;
+    }
+  }
+
+  /* skills */
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 40%;
+}
+.container { 
+    background-color: rgb(192, 192, 192); 
+    width: 80%; 
+    border-radius: 15px; 
+} 
+
+.skill { 
+ 
+    color: white; 
+    padding: 1px; 
+    text-align: right; 
+    font-size: 1em; 
+    border-radius: 15px; 
+} 
+
+#html { 
+    width: 90%;
+    background-color: black; 
+}
+#js {
+    width: 80%;
+    background-color: rgb(30, 30, 30); 
+}
+#react {
+    width: 80%;
+    background-color: rgb(30, 30, 30); 
+}
+#sql {
+    width: 60%;
+    background-color: rgb(70, 70, 70); 
+}
+#csharp {
+    width: 60%;
+    background-color: rgb(70, 70, 70); 
+}
+#python {
+    width: 50%;
+    background-color: rgb(102, 102, 102); 
+}
+#com { 
+    width: 85%;
+    background-color: rgb(30, 30, 30);  
+}
+#prob { 
+    width: 90%;
+    background-color: black; 
+}
+#time { 
+    width: 75%;
+    background-color: rgb(70, 70, 70); 
+}
+#team { 
+    width: 90%;
+    background-color: black; 
+}
+#cre { 
+    width: 90%;
+    background-color: black; 
+}
+    
+
 /*portfolio*/
 .portfolio {
     max-width: 1600px;
@@ -269,7 +462,6 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-inline: auto;
     padding-inline: 24px;
 }
@@ -286,7 +478,7 @@ body {
     color: black;
     height: 450px;
     margin: 10px;
-    flex: 31%;
+    flex: 30%;
     flex-grow: 0;
 }
 @media (max-width: 800px) {
