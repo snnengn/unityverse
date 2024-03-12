@@ -216,6 +216,7 @@ body {
     font-size: large;
     font-weight: 100;
     margin: 20px 0;
+    line-height: 1.8;
 }
 .title h1 {
     margin: 0;
@@ -223,7 +224,6 @@ body {
 }
 .title h2 {
     font-weight: 300;
-    padding: 2px;
     margin: 20px 0;
 }
 .title h4 {
@@ -242,8 +242,50 @@ body {
     height: 25%;
     margin: 50px 0;
 }
+/*about*/
+.about-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgb(187, 187, 187);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 100px 0;
+}
+@media (max-width: 800px) {
+    .about-content {
+      height:100%;
+    }
+  }
 
 /*contact*/
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgb(187, 187, 187);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 100px 0;
+}
+@media (max-width: 800px) {
+    .contact-content {
+      height:100%;
+    }
+  }
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -262,6 +304,7 @@ body {
     background-color: #000;
     color: white;
     border: 1px solid rgb(202, 202, 202);
+    cursor: pointer;
 }
 
 .name {
@@ -279,7 +322,8 @@ body {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 100;
-    margin: 2px;    
+    margin: 2px;
+    color: #000;    
 }
 .social-icons {
     display: flex;
@@ -534,18 +578,29 @@ body {
 
 /*buttons*/
 #github {
-    padding: 15px;
+    padding:12px 14px;
     background-color: rgb(0, 0, 0);
     color: white;
     border: 0;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 0.4em;
+    cursor: pointer;
 }
 #linkedin {
-    padding: 15px;
+    padding:12px 14px;
     background-color: #0072b1;
     color: white;
     border: 0;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 0.4em;
+    cursor: pointer;
+}
+#instagram {
+    padding:12px 14px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: white;
+    border: 0;
+    border-radius: 50px;
+    font-size: 0.4em;
+    cursor: pointer;
 }
