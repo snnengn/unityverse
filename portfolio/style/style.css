@@ -238,11 +238,6 @@ body {
     align-items: center;
     padding: 0;
 }
-.blank {
-    height: 25%;
-    margin: 50px 0;
-}
-
 /*about*/
 .about-content {
     display: flex;
@@ -501,6 +496,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+.portfolio-button a {
+    width: 100%;
+    text-align: center;
+}
 .portfolio-content button {
     width: 95%;
     padding: 10px;
@@ -508,6 +507,7 @@ body {
     color: white;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 /*contact*/
