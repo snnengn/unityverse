@@ -242,6 +242,7 @@ body {
     height: 25%;
     margin: 50px 0;
 }
+
 /*about*/
 .about-content {
     display: flex;
@@ -264,73 +265,6 @@ body {
     }
   }
 
-/*contact*/
-.contact-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    width: 100%;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.90);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgb(187, 187, 187);
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    padding: 100px 0;
-}
-@media (max-width: 800px) {
-    .contact-content {
-      height:100%;
-    }
-  }
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-.contact-form input, textarea {
-    padding: 10px;
-    border-radius: 10px;
-    margin: 5px;
-    border: 1px solid rgb(202, 202, 202);
-    font-family: "Rubik", sans-serif;
-}
-.contact-form button {
-    padding: 10px;
-    border-radius: 10px;
-    margin: 5px;
-    background-color: #000;
-    color: white;
-    border: 1px solid rgb(202, 202, 202);
-    cursor: pointer;
-}
-
-.name {
-    display: flex;
-    flex-direction: row;
-}
-.name input {
-    width: 49%;
-}
-.social {
-    padding: 10px;
-
-}
-.social a {
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 100;
-    margin: 2px;
-    color: #000;    
-}
-.social-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 5px;
-}
 /*experiences*/
 .experiences-content {
     display: flex;
@@ -574,6 +508,74 @@ body {
     color: white;
     border: none;
     border-radius: 10px;
+}
+
+/*contact*/
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.90);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgb(187, 187, 187);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 100px 0;
+}
+@media (max-width: 800px) {
+    .contact-content {
+      height:100%;
+    }
+  }
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    border: 1px solid rgb(202, 202, 202);
+    font-family: "Rubik", sans-serif;
+}
+.contact-form button {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #000;
+    color: white;
+    border: 1px solid rgb(202, 202, 202);
+    cursor: pointer;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+}
+.name input {
+    width: 49%;
+}
+.social {
+    padding: 10px;
+
+}
+.social a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 100;
+    margin: 2px;
+    color: #000;    
+}
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
 }
 
 /*buttons*/
