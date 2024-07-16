@@ -1,13 +1,13 @@
 import React from "react";
 
 
-function IlanListe({ilanlar}) {
+function IlanListe({ilanlar, onSelect}) {
     console.log(ilanlar)
   return (
     <div className="container my-5">
       <ul className="list-group">
         {ilanlar.map((ilan) => (
-          <li key={ilan.id} className="list-group-item d-flex align-items-start">
+          <li key={ilan.id} onClick={() => onSelect(ilan)} className="list-group-item d-flex align-items-start liste">
             <div className="me-auto d-flex flex-row">
               <div className="fw-bold ilan d-flex justify-content-center align-items-center mx-3">
                 <img
@@ -16,9 +16,9 @@ function IlanListe({ilanlar}) {
                   alt=""
                 />
               </div>
-              <div>
-                <p className="fw-bold text-secondary">#{ilan.category}</p>
-                <h5 className="lead">{ilan.job_title}</h5>
+              <div className="p-1" >
+                <p className="badge text-bg-secondary rounded-pill">#{ilan.category}</p>
+                <h5 className="">{ilan.job_title}</h5>
                 <p className="">{ilan.location}</p>
               </div>
             </div>
