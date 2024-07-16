@@ -4,7 +4,7 @@ import React from "react";
 function IlanListe({ilanlar, onSelect}) {
   return (
     
-    <div className="container my-5">
+    <div className="container my-3">
 
 
 

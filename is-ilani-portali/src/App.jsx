@@ -47,7 +47,7 @@ function App() {
 
   return (
     <>
-      <h1 className='text-center my-5 display-2'>İş İlanı Portalı</h1>
+      <h1 className='text-center my-4 display-3'>İş İlanı Portalı</h1>
       <IlanAra onSearch={handleSearch}/>
 
       <div>

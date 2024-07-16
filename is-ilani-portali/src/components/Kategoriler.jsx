@@ -3,8 +3,8 @@ import React from "react";
 function Kategoriler({ kategoriler, kategoriFiltre, onShowAll }) {
   return (
     <div className="container">
-      <div className="rounded card p-3 mt-5">
-        <h3 className="text-center" >Kategoriler</h3>
+      <div className="rounded card p-3 mt-3">
+        <h3 className="text-center display-6" >Kategoriler</h3>
         <div className="d-inline-flex flex-row justify-content-start flex-wrap ilan">
           {kategoriler.map((category, index) => (
             <a
