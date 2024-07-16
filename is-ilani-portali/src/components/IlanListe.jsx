@@ -1,12 +1,13 @@
 import React from "react";
-import IlanData from "../data/IlanData";
 
-function IlanListe() {
+
+function IlanListe({ilanlar}) {
+    console.log(ilanlar)
   return (
-    <div className="container mt-5">
+    <div className="container my-5">
       <ul className="list-group">
-        {IlanData.map((ilan) => (
-          <li className="list-group-item d-flex align-items-start">
+        {ilanlar.map((ilan) => (
+          <li key={ilan.id} className="list-group-item d-flex align-items-start">
             <div className="me-auto d-flex flex-row">
               <div className="fw-bold ilan d-flex justify-content-center align-items-center mx-3">
                 <img
@@ -17,9 +18,8 @@ function IlanListe() {
               </div>
               <div>
                 <p className="fw-bold text-secondary">#{ilan.category}</p>
-                <h5 className="">{ilan.job_title}</h5>
-                <p className="lead">{ilan.job_description}</p>
-                <p className="fw-bold">{ilan.location}</p>
+                <h5 className="lead">{ilan.job_title}</h5>
+                <p className="">{ilan.location}</p>
               </div>
             </div>
           </li>
