@@ -5,6 +5,13 @@ body {
   height: 100px;
   width: 150px;
 }
+.ilan a {
+  text-decoration: none;
+  padding: 8px;
+}
+.ilan a:hover {
+  scale: 1.05;
+}
 
 .liste {
   cursor: pointer;

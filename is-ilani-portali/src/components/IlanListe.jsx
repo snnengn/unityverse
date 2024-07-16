@@ -2,9 +2,12 @@ import React from "react";
 
 
 function IlanListe({ilanlar, onSelect}) {
-    console.log(ilanlar)
   return (
+    
     <div className="container my-5">
+
+
+
       <ul className="list-group">
         {ilanlar.map((ilan) => (
           <li key={ilan.id} onClick={() => onSelect(ilan)} className="list-group-item d-flex align-items-start liste">
