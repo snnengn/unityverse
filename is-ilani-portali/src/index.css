@@ -1,4 +1,8 @@
+html {
+  scroll-behavior:smooth;
+}
 body {
+  caret-color: transparent;
   background-color: whitesmoke;
 }
 .ilan img {
@@ -17,6 +21,6 @@ body {
   cursor: pointer;
 }
 .ara {
-  background-image: url("images/search-bg.jpg");
+  background-image: url("/images/search-bg.jpg");
   opacity: 0.9;
 }
