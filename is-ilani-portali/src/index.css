@@ -16,3 +16,7 @@ body {
 .liste {
   cursor: pointer;
 }
+.ara {
+  background-image: url("images/search-bg.jpg");
+  opacity: 0.9;
+}
