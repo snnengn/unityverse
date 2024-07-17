@@ -4,7 +4,7 @@ function IlanDetay({ ilan, onBack }) {
   if (!ilan) return <div>Bir iş seçin</div>;
   return (
     <div className="container">
-      <div className="card my-5 p-3 ilan d-flex justify-content-center align-items-center text-center">
+      <div className="card my-3 p-3 ilan d-flex justify-content-center align-items-center text-center">
       <span className="badge text-bg-secondary rounded-pill" > #{ilan.category} </span>
         <img className="object-fit-cover my-5" src={ilan.job_image_url} alt="" />
         <h2>{ilan.job_title}</h2> 
